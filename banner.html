@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Asos Banner</title>
+      <style>
+
+      body {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      .card-container {
+        cursor: pointer;
+        height: 90px;
+        perspective: 600;
+        -webkit-perspective: 600;
+        position: relative;
+        width: 740px
+      }
+      .card {
+        height: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        transition: all 1s linear;
+        -webkit-transition: all 1s linear;
+        width: 100%;
+      }
+      .card:hover {
+        transform: rotateX(360deg);
+        -webkit-transform: rotateX(360deg);
+      }
+      .card .back {
+        transform: rotateX(360deg);
+        -webkit-transform: rotateX(360deg);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card-container">
+      <div class="card">
+        <img src="images/AsosBanner.png">
+      </div>
+    </div>
+  </body>
+</html>
